@@ -11,6 +11,7 @@ body{
     font-family: 'Work Sans', sans-serif;
     height: 100vh;
     padding: 0;
+
 }
 
 /* start container */
@@ -166,6 +167,7 @@ header .links ul li:not(:last-child) a{
     background-image: url(../images/mountain.jpg);
     background-size: cover;
     text-align: center;
+    overflow: hidden;
 }
 .text-box{
     position: absolute;
@@ -196,6 +198,7 @@ header .links ul li:not(:last-child) a{
     text-align: center;
     flex-wrap: nowrap;
     gap: 40px;
+    overflow: hidden;
 }
 .features i{
     font-size: 50px;
@@ -217,10 +220,16 @@ header .links ul li:not(:last-child) a{
         justify-content: center;
     }
 }
+@media (max-width:400px) {
+    .features p{
+        width: 100%;
+    }
+}
 /* start services */
 .services{
     background-color: #ececec93;
     padding-block: 60px;
+    overflow: hidden;
 }
 .services .content {
     gap: 80px 20px;
@@ -260,6 +269,9 @@ header .links ul li:not(:last-child) a{
     font-size: 25px;
     color: #10cab7;
 }
+.skill h3{
+    text-transform: capitalize;
+}
 .skill p{
     width: 250px;
 }
@@ -294,10 +306,11 @@ header .links ul li:not(:last-child) a{
 .portfolio{
     padding-block: 60px;
     background-color: #ececec93;
+    overflow: hidden;
 }
 .portfolio .content{
     padding:30px;
-    gap: 3%;
+    gap: 5% 3%;
     
 }
 .portfolio .content .content-item{
@@ -311,6 +324,10 @@ header .links ul li:not(:last-child) a{
 @media (max-width:994px) {
     .portfolio .content img{
         max-width: 350px;
+    }
+    .portfolio .content{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 @media (max-width:380px) {
@@ -334,6 +351,7 @@ header .links ul li:not(:last-child) a{
 
 /* start about */
 .about{
+    overflow: hidden;
     padding-block: 120px;
 }
 .about .flex{
@@ -423,6 +441,7 @@ header .links ul li:not(:last-child) a{
 
 }
 footer{
+    overflow: hidden;
     background-color: #566872;
     text-align: center;
     padding-block: 15px 7px; 
